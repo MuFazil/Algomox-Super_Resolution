@@ -1,0 +1,416 @@
+{
+  "experimentParameters": {
+    "params": {
+      "experimentName": "SRGAN_HPT",
+      "experimentType": "hpo",
+      "searchSpaceFile": "D:\\algomox\\SRGAN_HPT\\search_space.json",
+      "searchSpace": {
+        "batch_size": {
+          "_type": "choice",
+          "_value": [8, 16]
+        },
+        "pre_train_epoch": {
+          "_type": "choice",
+          "_value": [2000, 4000]
+        },
+        "learning_rate": {
+          "_type": "uniform",
+          "_value": [0.0001, 0.001]
+        }
+      },
+      "trialCommand": "C:/Users/Lenovo/AppData/Local/Programs/Python/Python310/python.exe D:/algomox/SRGAN_HPT/main.py",
+      "trialCodeDirectory": "D:\\algomox\\SRGAN_HPT",
+      "trialConcurrency": 1,
+      "useAnnotation": false,
+      "debug": false,
+      "logLevel": "info",
+      "experimentWorkingDirectory": "C:\\Users\\Lenovo\\nni-experiments",
+      "tuner": {
+        "name": "TPE",
+        "classArgs": {
+          "optimize_mode": "maximize"
+        }
+      },
+      "trainingService": {
+        "platform": "local",
+        "trialCommand": "C:/Users/Lenovo/AppData/Local/Programs/Python/Python310/python.exe D:/algomox/SRGAN_HPT/main.py",
+        "trialCodeDirectory": "D:\\algomox\\SRGAN_HPT",
+        "debug": false,
+        "maxTrialNumberPerGpu": 1,
+        "reuseMode": false
+      }
+    },
+    "id": "82pf3m0t",
+    "execDuration": 21116,
+    "logDir": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t",
+    "startTime": 1699735339166,
+    "nextSequenceId": 12,
+    "revision": 2125
+  },
+  "trialMessage": [
+    {
+      "trialJobId": "CCafm",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":0,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.0005766818825051573},\"parameter_index\":0}"
+      ],
+      "startTime": 1699735342265,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\CCafm",
+      "sequenceId": 0,
+      "envId": "local-env",
+      "endTime": 1699736989284,
+      "finalMetricData": [
+        {
+          "timestamp": 1699736984468,
+          "trialJobId": "CCafm",
+          "parameterId": "0",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.612867003568613\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699736984468,
+          "trialJobId": "CCafm",
+          "parameterId": "0",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.612867003568613\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "OhBi8",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":1,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.0007073960963963515},\"parameter_index\":0}"
+      ],
+      "startTime": 1699736990127,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\OhBi8",
+      "sequenceId": 1,
+      "envId": "local-env",
+      "endTime": 1699738424831,
+      "finalMetricData": [
+        {
+          "timestamp": 1699738420632,
+          "trialJobId": "OhBi8",
+          "parameterId": "1",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.63645939512046\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699738420632,
+          "trialJobId": "OhBi8",
+          "parameterId": "1",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.63645939512046\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "bwQnB",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":2,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.0009041091674945719},\"parameter_index\":0}"
+      ],
+      "startTime": 1699738425709,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\bwQnB",
+      "sequenceId": 2,
+      "envId": "local-env",
+      "endTime": 1699739857787,
+      "finalMetricData": [
+        {
+          "timestamp": 1699739849977,
+          "trialJobId": "bwQnB",
+          "parameterId": "2",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.62535234867443\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699739849977,
+          "trialJobId": "bwQnB",
+          "parameterId": "2",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.62535234867443\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "q3Wm1",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":3,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":4000,\"learning_rate\":0.00046816229060480915},\"parameter_index\":0}"
+      ],
+      "startTime": 1699739858587,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\q3Wm1",
+      "sequenceId": 3,
+      "envId": "local-env",
+      "endTime": 1699742759013,
+      "finalMetricData": [
+        {
+          "timestamp": 1699742754131,
+          "trialJobId": "q3Wm1",
+          "parameterId": "3",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.904164891313936\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699742754131,
+          "trialJobId": "q3Wm1",
+          "parameterId": "3",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.904164891313936\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "qIQco",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":4,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.00018174625571415243},\"parameter_index\":0}"
+      ],
+      "startTime": 1699742759810,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\qIQco",
+      "sequenceId": 4,
+      "envId": "local-env",
+      "endTime": 1699744178230,
+      "finalMetricData": [
+        {
+          "timestamp": 1699744171836,
+          "trialJobId": "qIQco",
+          "parameterId": "4",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.594137702804115\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699744171836,
+          "trialJobId": "qIQco",
+          "parameterId": "4",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.594137702804115\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "xjKs2",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":5,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":16,\"pre_train_epoch\":2000,\"learning_rate\":0.0009407124689159261},\"parameter_index\":0}"
+      ],
+      "startTime": 1699744178900,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\xjKs2",
+      "sequenceId": 5,
+      "envId": "local-env",
+      "endTime": 1699745497974,
+      "finalMetricData": [
+        {
+          "timestamp": 1699745491275,
+          "trialJobId": "xjKs2",
+          "parameterId": "5",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.389815171360752\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699745491275,
+          "trialJobId": "xjKs2",
+          "parameterId": "5",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.389815171360752\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "jQkBV",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":6,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":16,\"pre_train_epoch\":4000,\"learning_rate\":0.0007272440568453607},\"parameter_index\":0}"
+      ],
+      "startTime": 1699745498508,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\jQkBV",
+      "sequenceId": 6,
+      "envId": "local-env",
+      "endTime": 1699748157088,
+      "finalMetricData": [
+        {
+          "timestamp": 1699748152245,
+          "trialJobId": "jQkBV",
+          "parameterId": "6",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.672742737707505\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699748152245,
+          "trialJobId": "jQkBV",
+          "parameterId": "6",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.672742737707505\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "ak2oc",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":7,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.0006471952071211072},\"parameter_index\":0}"
+      ],
+      "startTime": 1699748157974,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\ak2oc",
+      "sequenceId": 7,
+      "envId": "local-env",
+      "endTime": 1699749580694,
+      "finalMetricData": [
+        {
+          "timestamp": 1699749575162,
+          "trialJobId": "ak2oc",
+          "parameterId": "7",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.621271875455335\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699749575162,
+          "trialJobId": "ak2oc",
+          "parameterId": "7",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.621271875455335\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "kuO8e",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":8,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":4000,\"learning_rate\":0.0006093039849708729},\"parameter_index\":0}"
+      ],
+      "startTime": 1699749581324,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\kuO8e",
+      "sequenceId": 8,
+      "envId": "local-env",
+      "endTime": 1699752411213,
+      "finalMetricData": [
+        {
+          "timestamp": 1699752403442,
+          "trialJobId": "kuO8e",
+          "parameterId": "8",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.873773498638716\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699752403442,
+          "trialJobId": "kuO8e",
+          "parameterId": "8",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.873773498638716\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "pPRr9",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":9,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":4000,\"learning_rate\":0.0008920886284276703},\"parameter_index\":0}"
+      ],
+      "startTime": 1699752412194,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\pPRr9",
+      "sequenceId": 9,
+      "envId": "local-env",
+      "endTime": 1699755282985,
+      "finalMetricData": [
+        {
+          "timestamp": 1699755277797,
+          "trialJobId": "pPRr9",
+          "parameterId": "9",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.9660676037018\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699755277797,
+          "trialJobId": "pPRr9",
+          "parameterId": "9",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.9660676037018\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "K7Yo7",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":10,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.00026254585023398254},\"parameter_index\":0}"
+      ],
+      "startTime": 1699755283947,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\K7Yo7",
+      "sequenceId": 10,
+      "envId": "local-env",
+      "endTime": 1699756707378,
+      "finalMetricData": [
+        {
+          "timestamp": 1699756702265,
+          "trialJobId": "K7Yo7",
+          "parameterId": "10",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.648101366196254\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699756702265,
+          "trialJobId": "K7Yo7",
+          "parameterId": "10",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"22.648101366196254\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "qFH2E",
+      "status": "RUNNING",
+      "hyperParameters": [
+        "{\"parameter_id\":11,\"parameter_source\":\"algorithm\",\"parameters\":{\"batch_size\":8,\"pre_train_epoch\":2000,\"learning_rate\":0.0005342049494753615},\"parameter_index\":0}"
+      ],
+      "startTime": 1699756708379,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\82pf3m0t\\environments\\local-env\\trials\\qFH2E",
+      "sequenceId": 11,
+      "envId": "local-env",
+      "intermediate": []
+    }
+  ]
+}

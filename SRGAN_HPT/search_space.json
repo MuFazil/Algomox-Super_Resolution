@@ -1,0 +1,6 @@
+
+{
+    "batch_size": {"_type": "choice", "_value": [8, 16]},
+    "pre_train_epoch": {"_type": "choice", "_value": [2000,4000]},
+    "learning_rate": {"_type": "uniform", "_value": [1e-4, 1e-3]}
+}
