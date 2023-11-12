@@ -3,8 +3,11 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
+
+# Get tuning parameters from NNI
 tuner_params = nni.get_next_parameter()
 
+# Extracting variable parameters from the tuner_params
 num_block = tuner_params["num_block"]
 num_discriminator_blocks = tuner_params["num_discriminator_blocks"]
 conv_kernel_size = tuner_params["conv_kernel_size"]
@@ -52,6 +55,7 @@ parser.add_argument(
     help="Discriminator activation",
 )
 
+# Default configuration
 parser.add_argument("--LR_path", type=str, default="custom_dataset/train_LR")
 parser.add_argument("--GT_path", type=str, default="custom_dataset/train_HR")
 parser.add_argument("--res_num", type=int, default=16)
@@ -73,6 +77,7 @@ parser.add_argument("--mode", type=str, default="train")
 
 args = parser.parse_args()
 
+# Executing the corresponding mode based on the argument
 if args.mode == "train":
     train(args)
 

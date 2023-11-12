@@ -1,14 +1,13 @@
+# Run this file using command  nnictl create --config D:\Algomox\SRGAN_HPT\config.yaml
+
 experimentName: SRGAN_HPT
 trialConcurrency: 1
 searchSpaceFile: SRGAN_HPT\search_space.json
 trialCommand: python3.exe SRGAN_HPT\main.py
 trainingService:
   platform: local
-  # useActiveGpu: True
-  # gpuIndices: 0
 
 tuner:
   name: TPE
   classArgs:
     optimize_mode: maximize
-  # gpuIndices: [0]

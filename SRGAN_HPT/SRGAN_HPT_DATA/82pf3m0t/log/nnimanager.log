@@ -1,0 +1,168 @@
+[2023-11-12 02:12:17] INFO (main) Start NNI manager
+[2023-11-12 02:12:17] INFO (RestServer) Starting REST server at port 8080, URL prefix: "/"
+[2023-11-12 02:12:17] INFO (RestServer) REST server started.
+[2023-11-12 02:12:18] WARNING (NNITensorboardManager) Tensorboard may not installed, if you want to use tensorboard, please check if tensorboard installed.
+[2023-11-12 02:12:18] INFO (NNIDataStore) Datastore initialization done
+[2023-11-12 02:12:19] INFO (NNIManager) Starting experiment: 82pf3m0t
+[2023-11-12 02:12:19] INFO (NNIManager) Setup training service...
+[2023-11-12 02:12:19] INFO (NNIManager) Setup tuner...
+[2023-11-12 02:12:19] INFO (NNIManager) Change NNIManager status from: INITIALIZED to: RUNNING
+[2023-11-12 02:12:20] INFO (NNIManager) Add event listeners
+[2023-11-12 02:12:20] INFO (LocalV3.local) Start
+[2023-11-12 02:12:20] INFO (NNIManager) NNIManager received command from dispatcher: ID, 
+[2023-11-12 02:12:20] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005766818825051573}, "parameter_index": 0}
+[2023-11-12 02:12:21] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 0,
+  hyperParameters: {
+    value: '{"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005766818825051573}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 02:12:22] INFO (LocalV3.local) Register directory trial_code = D:\Algomax\SRGAN_HPT
+[2023-11-12 02:12:22] INFO (LocalV3.local) Created trial CCafm
+[2023-11-12 02:12:29] INFO (LocalV3.local) Trial parameter: CCafm {"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005766818825051573}, "parameter_index": 0}
+[2023-11-12 02:39:49] INFO (NNIManager) Trial job CCafm status changed from RUNNING to SUCCEEDED
+[2023-11-12 02:39:49] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0007073960963963515}, "parameter_index": 0}
+[2023-11-12 02:39:50] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 1,
+  hyperParameters: {
+    value: '{"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0007073960963963515}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 02:39:50] INFO (LocalV3.local) Created trial OhBi8
+[2023-11-12 02:39:56] INFO (LocalV3.local) Trial parameter: OhBi8 {"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0007073960963963515}, "parameter_index": 0}
+[2023-11-12 03:03:45] INFO (NNIManager) Trial job OhBi8 status changed from RUNNING to SUCCEEDED
+[2023-11-12 03:03:45] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0009041091674945719}, "parameter_index": 0}
+[2023-11-12 03:03:45] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 2,
+  hyperParameters: {
+    value: '{"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0009041091674945719}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 03:03:45] INFO (LocalV3.local) Created trial bwQnB
+[2023-11-12 03:03:50] INFO (LocalV3.local) Trial parameter: bwQnB {"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0009041091674945719}, "parameter_index": 0}
+[2023-11-12 03:27:38] INFO (NNIManager) Trial job bwQnB status changed from RUNNING to SUCCEEDED
+[2023-11-12 03:27:38] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.00046816229060480915}, "parameter_index": 0}
+[2023-11-12 03:27:38] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 3,
+  hyperParameters: {
+    value: '{"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.00046816229060480915}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 03:27:38] INFO (LocalV3.local) Created trial q3Wm1
+[2023-11-12 03:27:45] INFO (LocalV3.local) Trial parameter: q3Wm1 {"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.00046816229060480915}, "parameter_index": 0}
+[2023-11-12 04:15:59] INFO (NNIManager) Trial job q3Wm1 status changed from RUNNING to SUCCEEDED
+[2023-11-12 04:15:59] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00018174625571415243}, "parameter_index": 0}
+[2023-11-12 04:15:59] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 4,
+  hyperParameters: {
+    value: '{"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00018174625571415243}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 04:15:59] INFO (LocalV3.local) Created trial qIQco
+[2023-11-12 04:16:06] INFO (LocalV3.local) Trial parameter: qIQco {"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00018174625571415243}, "parameter_index": 0}
+[2023-11-12 04:39:38] INFO (NNIManager) Trial job qIQco status changed from RUNNING to SUCCEEDED
+[2023-11-12 04:39:38] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 2000, "learning_rate": 0.0009407124689159261}, "parameter_index": 0}
+[2023-11-12 04:39:38] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 5,
+  hyperParameters: {
+    value: '{"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 2000, "learning_rate": 0.0009407124689159261}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 04:39:38] INFO (LocalV3.local) Created trial xjKs2
+[2023-11-12 04:39:44] INFO (LocalV3.local) Trial parameter: xjKs2 {"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 2000, "learning_rate": 0.0009407124689159261}, "parameter_index": 0}
+[2023-11-12 05:01:37] INFO (NNIManager) Trial job xjKs2 status changed from RUNNING to SUCCEEDED
+[2023-11-12 05:01:38] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 4000, "learning_rate": 0.0007272440568453607}, "parameter_index": 0}
+[2023-11-12 05:01:38] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 6,
+  hyperParameters: {
+    value: '{"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 4000, "learning_rate": 0.0007272440568453607}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 05:01:38] INFO (LocalV3.local) Created trial jQkBV
+[2023-11-12 05:01:43] INFO (LocalV3.local) Trial parameter: jQkBV {"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"batch_size": 16, "pre_train_epoch": 4000, "learning_rate": 0.0007272440568453607}, "parameter_index": 0}
+[2023-11-12 05:45:57] INFO (NNIManager) Trial job jQkBV status changed from RUNNING to SUCCEEDED
+[2023-11-12 05:45:57] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0006471952071211072}, "parameter_index": 0}
+[2023-11-12 05:45:57] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 7,
+  hyperParameters: {
+    value: '{"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0006471952071211072}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 05:45:57] INFO (LocalV3.local) Created trial ak2oc
+[2023-11-12 05:46:03] INFO (LocalV3.local) Trial parameter: ak2oc {"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0006471952071211072}, "parameter_index": 0}
+[2023-11-12 06:09:40] INFO (NNIManager) Trial job ak2oc status changed from RUNNING to SUCCEEDED
+[2023-11-12 06:09:40] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0006093039849708729}, "parameter_index": 0}
+[2023-11-12 06:09:41] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 8,
+  hyperParameters: {
+    value: '{"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0006093039849708729}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 06:09:41] INFO (LocalV3.local) Created trial kuO8e
+[2023-11-12 06:09:47] INFO (LocalV3.local) Trial parameter: kuO8e {"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0006093039849708729}, "parameter_index": 0}
+[2023-11-12 06:56:51] INFO (NNIManager) Trial job kuO8e status changed from RUNNING to SUCCEEDED
+[2023-11-12 06:56:51] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0008920886284276703}, "parameter_index": 0}
+[2023-11-12 06:56:52] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 9,
+  hyperParameters: {
+    value: '{"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0008920886284276703}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 06:56:52] INFO (LocalV3.local) Created trial pPRr9
+[2023-11-12 06:56:58] INFO (LocalV3.local) Trial parameter: pPRr9 {"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 4000, "learning_rate": 0.0008920886284276703}, "parameter_index": 0}
+[2023-11-12 07:44:43] INFO (NNIManager) Trial job pPRr9 status changed from RUNNING to SUCCEEDED
+[2023-11-12 07:44:43] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00026254585023398254}, "parameter_index": 0}
+[2023-11-12 07:44:43] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 10,
+  hyperParameters: {
+    value: '{"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00026254585023398254}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 07:44:43] INFO (LocalV3.local) Created trial K7Yo7
+[2023-11-12 07:44:49] INFO (LocalV3.local) Trial parameter: K7Yo7 {"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.00026254585023398254}, "parameter_index": 0}
+[2023-11-12 08:08:27] INFO (NNIManager) Trial job K7Yo7 status changed from RUNNING to SUCCEEDED
+[2023-11-12 08:08:27] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005342049494753615}, "parameter_index": 0}
+[2023-11-12 08:08:28] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 11,
+  hyperParameters: {
+    value: '{"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005342049494753615}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 08:08:28] INFO (LocalV3.local) Created trial qFH2E
+[2023-11-12 08:08:34] INFO (LocalV3.local) Trial parameter: qFH2E {"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"batch_size": 8, "pre_train_epoch": 2000, "learning_rate": 0.0005342049494753615}, "parameter_index": 0}
+[2023-11-12 08:21:41] INFO (ShutdownManager) Initiate shutdown: SIGBREAK
+[2023-11-12 08:21:41] INFO (RestServer) Stopping REST server.
+[2023-11-12 08:21:41] INFO (NNIManager) Change NNIManager status from: RUNNING to: STOPPING
+[2023-11-12 08:21:41] INFO (NNIManager) Stopping experiment, cleaning up ...
+[2023-11-12 08:21:42] INFO (RestServer) REST server stopped.
+[2023-11-12 08:21:43] INFO (LocalV3.local) All trials stopped
+[2023-11-12 08:21:43] INFO (NNIManager) Change NNIManager status from: STOPPING to: STOPPED
+[2023-11-12 08:21:43] INFO (NNIManager) Experiment stopped.
+[2023-11-12 08:21:43] INFO (NNITensorboardManager) Forced stopping all tensorboard task.
+[2023-11-12 08:21:43] INFO (NNITensorboardManager) All tensorboard task stopped.
+[2023-11-12 08:21:43] INFO (NNITensorboardManager) Tensorboard manager stopped.
+[2023-11-12 08:21:43] INFO (ShutdownManager) Shutdown complete.

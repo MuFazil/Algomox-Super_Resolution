@@ -1,3 +1,5 @@
+# Run this file using command  nnictl create --config D:\Algomox\SRGAN_NAS\config.yaml
+
 experimentName: SRGAN_nas
 trialConcurrency: 1
 trialCommand: python3.exe SRGAN_NAS/main.py

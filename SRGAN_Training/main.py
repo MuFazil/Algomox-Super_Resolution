@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 def str2bool(v):
     return v.lower() in ("true")
 
-
+# Default configuration & parsing command line
 parser.add_argument("--LR_path", type=str, default="Dataset/train/LowRes")
 parser.add_argument("--GT_path", type=str, default="Dataset/train/HighRes")
 parser.add_argument("--res_num", type=int, default=8)
@@ -30,6 +30,7 @@ parser.add_argument("--mode", type=str, default="train")
 
 args = parser.parse_args()
 
+# Executing the corresponding mode based on the argument
 if args.mode == "train":
     train(args)
 

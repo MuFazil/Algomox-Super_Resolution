@@ -11,13 +11,10 @@ from vgg19 import vgg19
 import numpy as np
 from PIL import Image
 from skimage.color import rgb2ycbcr
-
-# from skimage.measure import compare_psnr
 from skimage.metrics import peak_signal_noise_ratio
 
-# tuner_params = nni.get_next_parameter()
 
-
+# Function to train the model
 def train(args):
     print(args)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -33,6 +30,7 @@ def train(args):
         dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers
     )
 
+    # Initializing the generator model
     generator = Generator(
         img_feat=3, n_feats=64, kernel_size=3, num_block=args.res_num, scale=args.scale
     )
@@ -49,6 +47,7 @@ def train(args):
     generator = generator.to(device)
     generator.train()
 
+    # Loss function and optimizer for generator
     l2_loss = nn.MSELoss()
     g_optim = optim.Adam(generator.parameters(), lr=learning_rate)
 
@@ -115,6 +114,7 @@ def train(args):
     real_label = torch.ones((args.batch_size, 1)).to(device)
     fake_label = torch.zeros((args.batch_size, 1)).to(device)
 
+    # Fine tuning
     while fine_epoch < args.fine_train_epoch:
         scheduler.step()
 
@@ -176,8 +176,6 @@ def train(args):
             print("=========")
 
         if fine_epoch % 500 == 0:
-            # torch.save(generator.state_dict(), './model/SRGAN_gene_%03d.pt'%fine_epoch)
-            # torch.save(discriminator.state_dict(), './model/SRGAN_discrim_%03d.pt'%fine_epoch)
             torch.save(
                 generator.state_dict(), "./model/SRGAN_gene_%03d.pt" % fine_epoch
             )
@@ -247,6 +245,7 @@ def test(args):
         f.write("avg psnr : %04f" % np.mean(psnr_list))
 
 
+# Function to test the model
 def test_only(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     dataset = testOnly_data(LR_path=args.LR_path, in_memory=False, transform=None)

@@ -12,17 +12,11 @@ from PIL import Image
 from skimage.color import rgb2ycbcr
 from skimage.metrics import structural_similarity as ssim
 from torchvision.transforms.functional import rgb_to_grayscale
-import re
-
-# from torch.utils.tensorboard import SummaryWriter
-
-# from skimage.measure import compare_psnr
 from skimage.metrics import peak_signal_noise_ratio
 
 
+# Function to train the model
 def train(args):
-    # writer = SummaryWriter()
-
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     transform = transforms.Compose([crop(args.scale, args.patch_size), augmentation()])
@@ -36,6 +30,7 @@ def train(args):
         dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers
     )
 
+    # Initializing the generator model
     generator = Generator(
         img_feat=3, n_feats=128, kernel_size=3, num_block=args.res_num, scale=args.scale
     )
@@ -48,6 +43,7 @@ def train(args):
     generator = generator.to(device)
     generator.train()
 
+    # Loss function and optimizer for generator
     l2_loss = nn.MSELoss()
     g_optim = optim.Adam(generator.parameters(), lr=1e-4)
 
@@ -70,15 +66,6 @@ def train(args):
             # Calculate PSNR for each image and add to the list
             psnr = peak_signal_noise_ratio(gt_np, output_np, data_range=1.0)
             psnr_list.append(psnr)
-
-            # writer.add_scalar("Loss/train", loss.item(), pre_epoch)
-            # writer.add_scalar("PSNR/train", psnr, pre_epoch)
-
-            # Log images to TensorBoard
-            # if pre_epoch % 32 == 0:
-            #     # Assuming you have a function to generate and return a sample image
-            #     generated_image = generate_sample_image(generator, lr_sample)
-            #     writer.add_image('Generated Image', generated_image, epoch)
 
             g_optim.zero_grad()
             loss.backward()
@@ -116,8 +103,6 @@ def train(args):
     tv_loss = TVLoss()
     real_label = torch.ones((args.batch_size, 1)).to(device)
     fake_label = torch.zeros((args.batch_size, 1)).to(device)
-
-    # writer.close()
 
     while fine_epoch < args.fine_train_epoch:
         scheduler.step()
@@ -162,11 +147,6 @@ def train(args):
             d_optim.zero_grad()
             g_loss.backward()
             g_optim.step()
-            # writer.add_scalar("Loss/Fine", loss.item(), fine_epoch)
-            # writer.add_scalar("Loss/Fine", g_loss, fine_epoch)
-            # writer.add_scalar("Loss/Fine", percep_loss, fine_epoch)
-            # writer.add_scalar("Loss/Fine", adversarial_loss, fine_epoch)
-            # writer.add_scalar("PSNR/Fine", L2_loss, fine_epoch)
 
         fine_epoch += 1
 
@@ -177,8 +157,6 @@ def train(args):
             print("=========")
 
         if fine_epoch % 500 == 0:
-            # torch.save(generator.state_dict(), './model/SRGAN_gene_%03d.pt'%fine_epoch)
-            # torch.save(discriminator.state_dict(), './model/SRGAN_discrim_%03d.pt'%fine_epoch)
             torch.save(
                 generator.state_dict(), "./model/SRGAN_gene_%03d.pt" % fine_epoch
             )
@@ -212,8 +190,6 @@ def test(args):
     # Extract the last 4 digits from the modified model name
     model_number = model_name[-4:]
 
-    # f = open("./results.txt", "w")
-    # result_file_name = f"./results_{model_number}.txt"
     result_file_name = f"./validation_results/results_{model_number}.txt"
 
     result_folder = f"./validation_results"
@@ -253,26 +229,18 @@ def test(args):
                 y_output / 255.0, y_gt / 255.0, data_range=1.0
             )
 
-            # psnr = compare_psnr(y_output / 255.0, y_gt / 255.0, data_range = 1.0)
             psnr_list.append(psnr)
             f.write("psnr : %04f \n" % psnr)
-
-            # win_size = min(7, min(h, w) - 1)
-            # Calculate SSIM
-            # ssim_value = ssim(y_output, y_gt, data_range=1.0, multichannel=True)
-            # ssim_list.append(ssim_value)
-            # f.write(f"ssim : {ssim_value:.4f} \n")
 
             result = Image.fromarray((output * 255.0).astype(np.uint8))
             result.save("./result/res_%04d.png" % i)
 
+        # Calculate the average PSNR after the fine-tuning phase
         f.write("avg psnr : %04f" % np.mean(psnr_list))
-        # f.write(f"avg ssim : {np.mean(ssim_list):.4f}\n")
 
 
 def test_only(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # device = torch.device("cpu")
 
     dataset = testOnly_data(LR_path=args.LR_path, in_memory=False, transform=None)
     loader = DataLoader(

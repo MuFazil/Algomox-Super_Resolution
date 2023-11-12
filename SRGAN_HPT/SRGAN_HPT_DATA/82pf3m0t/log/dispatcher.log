@@ -1,0 +1,5 @@
+[2023-11-12 02:12:20] INFO (nni.tuner.tpe/MainThread) Using random seed 589328557
+[2023-11-12 02:12:20] INFO (nni.runtime.msg_dispatcher_base/MainThread) Dispatcher started
+[2023-11-12 02:12:20] INFO (nni.runtime.msg_dispatcher/Thread-1 (command_queue_worker)) Initial search space: {'batch_size': {'_type': 'choice', '_value': [8, 16]}, 'pre_train_epoch': {'_type': 'choice', '_value': [2000, 4000]}, 'learning_rate': {'_type': 'uniform', '_value': [0.0001, 0.001]}}
+[2023-11-12 08:21:41] INFO (nni.runtime.msg_dispatcher_base/MainThread) Dispatcher exiting...
+[2023-11-12 08:21:42] INFO (nni.runtime.msg_dispatcher_base/MainThread) Dispatcher terminiated

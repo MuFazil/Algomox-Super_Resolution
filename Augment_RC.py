@@ -23,7 +23,7 @@ def random_crop_and_save(
         image_path = os.path.join(input_folder, image_file)
         img = Image.open(image_path)
 
-        # Skip images smaller than 256x256
+        # Skip images smaller than 400x400
         width, height = img.size
         if width < 400 or height < 400:
             print(f"Skipping {image_file} - Image size is below 400x400")
@@ -49,7 +49,7 @@ def random_crop_and_save(
 
 
 if __name__ == "__main__":
-    # Specify your input and output folders
+    # Specify the input and output folders
     input_folder_path = "HighRes"
     output_folder_path = "HighRes/Aug"
 

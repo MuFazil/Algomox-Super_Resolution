@@ -1,0 +1,6 @@
+[2023-11-12 02:12:17] INFO (nni.experiment) Creating experiment, Experiment ID: 82pf3m0t
+[2023-11-12 02:12:17] INFO (nni.experiment) Starting web server...
+[2023-11-12 02:12:19] INFO (nni.experiment) Setting up...
+[2023-11-12 02:12:19] INFO (nni.experiment) Web portal URLs: http://172.17.1.21:8080 http://169.254.195.183:8080 http://169.254.5.5:8080 http://169.254.55.223:8080 http://192.168.137.1:8080 http://172.16.0.2:8080 http://127.0.0.1:8080 http://127.0.2.2:8080 http://127.0.2.3:8080
+[2023-11-12 02:12:19] INFO (nni.tools.nnictl.launcher) To stop experiment run "nnictl stop 82pf3m0t" or "nnictl stop --all"
+[2023-11-12 02:12:19] INFO (nni.tools.nnictl.launcher) Reference: https://nni.readthedocs.io/en/stable/reference/nnictl.html

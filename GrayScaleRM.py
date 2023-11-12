@@ -32,7 +32,7 @@ def delete_grayscale_images(folder_path):
 
 
 if __name__ == "__main__":
-    # Specify the path to your folder containing images
+    # Specify the path to the folder containing images
     folder_path = "HighRes-Copy"
 
     # Call the function to delete grayscale images

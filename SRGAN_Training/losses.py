@@ -3,6 +3,10 @@ import torch.nn as nn
 from torchvision import transforms
 
 
+# This class extends nn.Conv2d and is used for mean shift operation.
+# It shifts the mean of input images to match a target mean and standard deviation.
+# The mean and standard deviation are set using the provided parameters norm_mean and norm_std.
+# It ensures that the images are normalized consistently during the processing.
 class MeanShift(nn.Conv2d):
     def __init__(
         self, rgb_range = 1,
@@ -17,7 +21,9 @@ class MeanShift(nn.Conv2d):
         for p in self.parameters():
             p.requires_grad = False
 
-
+# This class defines a perceptual loss module using a pre-trained VGG network.
+# It includes a mean shift transformation and calculates the mean squared error loss between high-resolution (HR) and super-resolved (SR) features.
+# The perceptual loss is computed at a specified layer of the VGG network, allowing for feature-wise loss evaluation
 class perceptual_loss(nn.Module):
 
     def __init__(self, vgg):
@@ -38,6 +44,10 @@ class perceptual_loss(nn.Module):
         
         return self.criterion(hr_feat, sr_feat), hr_feat, sr_feat
 
+
+# The TVLoss class implements the Total Variation (TV) loss, which encourages spatial smoothness in the output.
+# It calculates the TV loss based on the differences between neighboring pixel values in both horizontal and vertical directions.
+# The weight of the TV loss can be adjusted using the tv_loss_weight parameter.
 class TVLoss(nn.Module):
     def __init__(self, tv_loss_weight=1):
         super(TVLoss, self).__init__()

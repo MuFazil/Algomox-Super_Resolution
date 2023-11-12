@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+# Custom convolutional layer with initialization
 class _conv(nn.Conv2d):
     def __init__(self, in_channels, out_channels, kernel_size, stride, padding, bias):
         super(_conv, self).__init__(
@@ -23,6 +24,7 @@ class _conv(nn.Conv2d):
             p.requires_grad = True
 
 
+# Convolutional layer with optional batch normalization and activation function
 class conv(nn.Module):
     def __init__(
         self,
@@ -60,6 +62,7 @@ class conv(nn.Module):
         return out
 
 
+# Residual block
 class ResBlock(nn.Module):
     def __init__(self, channels, kernel_size, act=nn.ReLU(inplace=True), bias=True):
         super(ResBlock, self).__init__()
@@ -74,6 +77,7 @@ class ResBlock(nn.Module):
         return res
 
 
+# Basic block with convolution, multiple residual blocks, and a final convolution
 class BasicBlock(nn.Module):
     def __init__(
         self,
@@ -102,6 +106,7 @@ class BasicBlock(nn.Module):
         return out
 
 
+# Upsampling block using pixel shuffle
 class Upsampler(nn.Module):
     def __init__(self, channel, kernel_size, scale, act=nn.ReLU(inplace=True)):
         super(Upsampler, self).__init__()
@@ -119,6 +124,7 @@ class Upsampler(nn.Module):
         return out
 
 
+# Discriminator block 
 class discrim_block(nn.Module):
     def __init__(
         self, in_feats, out_feats, kernel_size, act=nn.LeakyReLU(inplace=True)

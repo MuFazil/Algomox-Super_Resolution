@@ -3,6 +3,7 @@ import torch.nn as nn
 from ops import *
 
 
+# Definition of the Generator model
 class Generator(nn.Module):
     def __init__(
         self,
@@ -15,19 +16,23 @@ class Generator(nn.Module):
     ):
         super(Generator, self).__init__()
 
+        # Initial convolution layer
         self.conv01 = conv(
             in_channel=img_feat, out_channel=n_feats, kernel_size=9, BN=False, act=act
         )
 
+        # Residual blocks
         resblocks = [
             ResBlock(channels=n_feats, kernel_size=3, act=act) for _ in range(num_block)
         ]
         self.body = nn.Sequential(*resblocks)
 
+        # Intermediate convolution layer
         self.conv02 = conv(
             in_channel=n_feats, out_channel=n_feats, kernel_size=3, BN=True, act=None
         )
 
+        # Upsampling blocks
         if scale == 4:
             upsample_blocks = [
                 Upsampler(channel=n_feats, kernel_size=3, scale=2, act=act)
@@ -40,6 +45,7 @@ class Generator(nn.Module):
 
         self.tail = nn.Sequential(*upsample_blocks)
 
+        # Final convolution layer
         self.last_conv = conv(
             in_channel=n_feats,
             out_channel=img_feat,
@@ -62,6 +68,7 @@ class Generator(nn.Module):
         return x, feat
 
 
+# Definition of the Discriminator model
 class Discriminator(nn.Module):
     def __init__(
         self,
