@@ -1,0 +1,7 @@
+[2023-11-12 00:05:50] INFO (nni.tuner.tpe/MainThread) Using random seed 4091182
+[2023-11-12 00:05:50] INFO (nni.runtime.msg_dispatcher_base/MainThread) Dispatcher started
+[2023-11-12 00:05:50] INFO (nni.runtime.msg_dispatcher/Thread-1 (command_queue_worker)) Initial search space: {'num_block': {'_type': 'choice', '_value': [8, 16]}, 'num_discriminator_blocks': {'_type': 'choice', '_value': [3, 4]}, 'conv_kernel_size': {'_type': 'choice', '_value': [3, 5]}, 'generator_depth': {'_type': 'choice', '_value': [64, 128]}, 'discriminator_depth': {'_type': 'choice', '_value': [64, 128]}, 'generator_activation': {'_type': 'choice', '_value': ['prelu', 'relu']}, 'discriminator_activation': {'_type': 'choice', '_value': ['leakyrelu']}}
+[2023-11-12 00:22:30] INFO (nni.common.hpo_utils.dedup/Thread-1 (command_queue_worker)) Tuning algorithm generated duplicate parameter: {('num_block',): 0, ('num_discriminator_blocks',): 1, ('conv_kernel_size',): 1, ('generator_depth',): 0, ('discriminator_depth',): 0, ('generator_activation',): 0, ('discriminator_activation',): 0}
+[2023-11-12 00:22:30] INFO (nni.common.hpo_utils.dedup/Thread-1 (command_queue_worker)) Use grid search for deduplication.
+[2023-11-12 00:22:30] INFO (nni.tuner.gridsearch/Thread-1 (command_queue_worker)) Grid initialized, size: (2�2�2�2�2�2�1) = 64
+[2023-11-12 01:52:24] INFO (nni.tuner.gridsearch/Thread-1 (command_queue_worker)) Search space has been fully explored

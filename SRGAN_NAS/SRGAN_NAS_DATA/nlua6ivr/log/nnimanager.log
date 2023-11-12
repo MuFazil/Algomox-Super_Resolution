@@ -1,0 +1,786 @@
+[2023-11-12 00:05:46] INFO (main) Start NNI manager
+[2023-11-12 00:05:46] INFO (RestServer) Starting REST server at port 8080, URL prefix: "/"
+[2023-11-12 00:05:46] INFO (RestServer) REST server started.
+[2023-11-12 00:05:47] WARNING (NNITensorboardManager) Tensorboard may not installed, if you want to use tensorboard, please check if tensorboard installed.
+[2023-11-12 00:05:47] INFO (NNIDataStore) Datastore initialization done
+[2023-11-12 00:05:47] ERROR (NNIRestHandler) TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\nni_node\rest_server\restHandler.js:289:45
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-11-12 00:05:48] INFO (NNIManager) Starting experiment: nlua6ivr
+[2023-11-12 00:05:48] INFO (NNIManager) Setup training service...
+[2023-11-12 00:05:48] INFO (NNIManager) Setup tuner...
+[2023-11-12 00:05:48] INFO (NNIManager) Change NNIManager status from: INITIALIZED to: RUNNING
+[2023-11-12 00:05:50] INFO (NNIManager) Add event listeners
+[2023-11-12 00:05:50] INFO (LocalV3.local) Start
+[2023-11-12 00:05:50] INFO (NNIManager) NNIManager received command from dispatcher: ID, 
+[2023-11-12 00:05:50] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:05:51] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 0,
+  hyperParameters: {
+    value: '{"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:05:52] INFO (LocalV3.local) Register directory trial_code = D:\algomox\SRGAN_CustomDataset
+[2023-11-12 00:05:52] INFO (LocalV3.local) Created trial YTvAC
+[2023-11-12 00:05:56] INFO (LocalV3.local) Trial parameter: YTvAC {"parameter_id": 0, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:07:31] INFO (NNIManager) Trial job YTvAC status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:07:31] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:07:31] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 1,
+  hyperParameters: {
+    value: '{"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:07:31] INFO (LocalV3.local) Created trial dYNi9
+[2023-11-12 00:07:38] INFO (LocalV3.local) Trial parameter: dYNi9 {"parameter_id": 1, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:09:14] INFO (NNIManager) Trial job dYNi9 status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:09:14] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:09:14] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 2,
+  hyperParameters: {
+    value: '{"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:09:14] INFO (LocalV3.local) Created trial LC4eF
+[2023-11-12 00:09:20] INFO (LocalV3.local) Trial parameter: LC4eF {"parameter_id": 2, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:10:55] INFO (NNIManager) Trial job LC4eF status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:10:55] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:10:55] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 3,
+  hyperParameters: {
+    value: '{"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:10:55] INFO (LocalV3.local) Created trial J6cxf
+[2023-11-12 00:11:01] INFO (LocalV3.local) Trial parameter: J6cxf {"parameter_id": 3, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:12:32] INFO (NNIManager) Trial job J6cxf status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:12:32] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:12:32] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 4,
+  hyperParameters: {
+    value: '{"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:12:32] INFO (LocalV3.local) Created trial FLwUS
+[2023-11-12 00:12:39] INFO (LocalV3.local) Trial parameter: FLwUS {"parameter_id": 4, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:14:13] INFO (NNIManager) Trial job FLwUS status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:14:13] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:14:13] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 5,
+  hyperParameters: {
+    value: '{"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:14:13] INFO (LocalV3.local) Created trial xJZie
+[2023-11-12 00:14:19] INFO (LocalV3.local) Trial parameter: xJZie {"parameter_id": 5, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:15:45] INFO (NNIManager) Trial job xJZie status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:15:45] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:15:45] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 6,
+  hyperParameters: {
+    value: '{"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:15:45] INFO (LocalV3.local) Created trial IuM5t
+[2023-11-12 00:15:52] INFO (LocalV3.local) Trial parameter: IuM5t {"parameter_id": 6, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:17:26] INFO (NNIManager) Trial job IuM5t status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:17:26] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:17:26] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 7,
+  hyperParameters: {
+    value: '{"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:17:26] INFO (LocalV3.local) Created trial e1WAz
+[2023-11-12 00:17:32] INFO (LocalV3.local) Trial parameter: e1WAz {"parameter_id": 7, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:19:15] INFO (NNIManager) Trial job e1WAz status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:19:15] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:19:16] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 8,
+  hyperParameters: {
+    value: '{"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:19:16] INFO (LocalV3.local) Created trial tN0hZ
+[2023-11-12 00:19:23] INFO (LocalV3.local) Trial parameter: tN0hZ {"parameter_id": 8, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:20:50] INFO (NNIManager) Trial job tN0hZ status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:20:50] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:20:50] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 9,
+  hyperParameters: {
+    value: '{"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:20:50] INFO (LocalV3.local) Created trial Lx8Sl
+[2023-11-12 00:20:56] INFO (LocalV3.local) Trial parameter: Lx8Sl {"parameter_id": 9, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:22:29] INFO (NNIManager) Trial job Lx8Sl status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:22:30] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:22:30] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 10,
+  hyperParameters: {
+    value: '{"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:22:30] INFO (LocalV3.local) Created trial O6ahO
+[2023-11-12 00:22:36] INFO (LocalV3.local) Trial parameter: O6ahO {"parameter_id": 10, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:24:03] INFO (NNIManager) Trial job O6ahO status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:24:03] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:24:03] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 11,
+  hyperParameters: {
+    value: '{"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:24:03] INFO (LocalV3.local) Created trial y6tOB
+[2023-11-12 00:24:09] INFO (LocalV3.local) Trial parameter: y6tOB {"parameter_id": 11, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:25:30] INFO (NNIManager) Trial job y6tOB status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:25:30] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 12, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:25:31] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 12,
+  hyperParameters: {
+    value: '{"parameter_id": 12, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:25:31] INFO (LocalV3.local) Created trial DMsiT
+[2023-11-12 00:25:38] INFO (LocalV3.local) Trial parameter: DMsiT {"parameter_id": 12, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:27:17] INFO (NNIManager) Trial job DMsiT status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:27:17] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 13, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:27:17] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 13,
+  hyperParameters: {
+    value: '{"parameter_id": 13, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:27:17] INFO (LocalV3.local) Created trial mOKu4
+[2023-11-12 00:27:24] INFO (LocalV3.local) Trial parameter: mOKu4 {"parameter_id": 13, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:28:52] INFO (NNIManager) Trial job mOKu4 status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:28:52] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 14, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:28:53] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 14,
+  hyperParameters: {
+    value: '{"parameter_id": 14, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:28:53] INFO (LocalV3.local) Created trial qRr7s
+[2023-11-12 00:28:58] INFO (LocalV3.local) Trial parameter: qRr7s {"parameter_id": 14, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:30:22] INFO (NNIManager) Trial job qRr7s status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:30:22] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 15, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:30:23] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 15,
+  hyperParameters: {
+    value: '{"parameter_id": 15, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:30:23] INFO (LocalV3.local) Created trial FHDLc
+[2023-11-12 00:30:29] INFO (LocalV3.local) Trial parameter: FHDLc {"parameter_id": 15, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:31:57] INFO (NNIManager) Trial job FHDLc status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:31:57] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 16, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:31:58] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 16,
+  hyperParameters: {
+    value: '{"parameter_id": 16, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:31:58] INFO (LocalV3.local) Created trial KRchD
+[2023-11-12 00:32:04] INFO (LocalV3.local) Trial parameter: KRchD {"parameter_id": 16, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:33:38] INFO (NNIManager) Trial job KRchD status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:33:38] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 17, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:33:39] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 17,
+  hyperParameters: {
+    value: '{"parameter_id": 17, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:33:39] INFO (LocalV3.local) Created trial JOagI
+[2023-11-12 00:33:48] INFO (LocalV3.local) Trial parameter: JOagI {"parameter_id": 17, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:35:11] INFO (NNIManager) Trial job JOagI status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:35:11] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 18, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:35:11] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 18,
+  hyperParameters: {
+    value: '{"parameter_id": 18, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:35:11] INFO (LocalV3.local) Created trial LCGhP
+[2023-11-12 00:35:18] INFO (LocalV3.local) Trial parameter: LCGhP {"parameter_id": 18, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:36:38] INFO (NNIManager) Trial job LCGhP status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:36:38] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 19, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:36:39] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 19,
+  hyperParameters: {
+    value: '{"parameter_id": 19, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:36:39] INFO (LocalV3.local) Created trial z9pQU
+[2023-11-12 00:36:44] INFO (LocalV3.local) Trial parameter: z9pQU {"parameter_id": 19, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:38:12] INFO (NNIManager) Trial job z9pQU status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:38:12] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 20, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:38:13] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 20,
+  hyperParameters: {
+    value: '{"parameter_id": 20, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:38:13] INFO (LocalV3.local) Created trial Z5W2W
+[2023-11-12 00:38:20] INFO (LocalV3.local) Trial parameter: Z5W2W {"parameter_id": 20, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:39:45] INFO (NNIManager) Trial job Z5W2W status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:39:45] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 21, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:39:45] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 21,
+  hyperParameters: {
+    value: '{"parameter_id": 21, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:39:45] INFO (LocalV3.local) Created trial q9gCU
+[2023-11-12 00:39:57] INFO (LocalV3.local) Trial parameter: q9gCU {"parameter_id": 21, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:41:17] INFO (NNIManager) Trial job q9gCU status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:41:17] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 22, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:41:18] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 22,
+  hyperParameters: {
+    value: '{"parameter_id": 22, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:41:18] INFO (LocalV3.local) Created trial jkCcu
+[2023-11-12 00:41:25] INFO (LocalV3.local) Trial parameter: jkCcu {"parameter_id": 22, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:42:40] INFO (NNIManager) Trial job jkCcu status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:42:40] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 23, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:42:41] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 23,
+  hyperParameters: {
+    value: '{"parameter_id": 23, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:42:41] INFO (LocalV3.local) Created trial ZVG7N
+[2023-11-12 00:42:47] INFO (LocalV3.local) Trial parameter: ZVG7N {"parameter_id": 23, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:44:04] INFO (NNIManager) Trial job ZVG7N status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:44:04] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 24, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:44:05] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 24,
+  hyperParameters: {
+    value: '{"parameter_id": 24, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:44:05] INFO (LocalV3.local) Created trial iPY7M
+[2023-11-12 00:44:12] INFO (LocalV3.local) Trial parameter: iPY7M {"parameter_id": 24, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:45:47] INFO (NNIManager) Trial job iPY7M status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:45:47] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 25, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:45:47] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 25,
+  hyperParameters: {
+    value: '{"parameter_id": 25, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:45:47] INFO (LocalV3.local) Created trial rR45I
+[2023-11-12 00:45:55] INFO (LocalV3.local) Trial parameter: rR45I {"parameter_id": 25, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:47:29] INFO (NNIManager) Trial job rR45I status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:47:29] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 26, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:47:29] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 26,
+  hyperParameters: {
+    value: '{"parameter_id": 26, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:47:29] INFO (LocalV3.local) Created trial ySFg1
+[2023-11-12 00:47:35] INFO (LocalV3.local) Trial parameter: ySFg1 {"parameter_id": 26, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:49:12] INFO (NNIManager) Trial job ySFg1 status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:49:12] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 27, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:49:12] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 27,
+  hyperParameters: {
+    value: '{"parameter_id": 27, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:49:12] INFO (LocalV3.local) Created trial DhbyG
+[2023-11-12 00:49:19] INFO (LocalV3.local) Trial parameter: DhbyG {"parameter_id": 27, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:50:46] INFO (NNIManager) Trial job DhbyG status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:50:46] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 28, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:50:46] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 28,
+  hyperParameters: {
+    value: '{"parameter_id": 28, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:50:46] INFO (LocalV3.local) Created trial N6O6L
+[2023-11-12 00:50:54] INFO (LocalV3.local) Trial parameter: N6O6L {"parameter_id": 28, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:52:22] INFO (NNIManager) Trial job N6O6L status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:52:22] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 29, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:52:22] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 29,
+  hyperParameters: {
+    value: '{"parameter_id": 29, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:52:22] INFO (LocalV3.local) Created trial rukaY
+[2023-11-12 00:52:29] INFO (LocalV3.local) Trial parameter: rukaY {"parameter_id": 29, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:54:05] INFO (NNIManager) Trial job rukaY status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:54:05] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 30, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:54:05] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 30,
+  hyperParameters: {
+    value: '{"parameter_id": 30, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:54:05] INFO (LocalV3.local) Created trial r33Pc
+[2023-11-12 00:54:12] INFO (LocalV3.local) Trial parameter: r33Pc {"parameter_id": 30, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:55:40] INFO (NNIManager) Trial job r33Pc status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:55:40] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 31, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:55:40] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 31,
+  hyperParameters: {
+    value: '{"parameter_id": 31, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:55:40] INFO (LocalV3.local) Created trial Bbo0w
+[2023-11-12 00:55:46] INFO (LocalV3.local) Trial parameter: Bbo0w {"parameter_id": 31, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:57:12] INFO (NNIManager) Trial job Bbo0w status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:57:12] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 32, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:57:13] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 32,
+  hyperParameters: {
+    value: '{"parameter_id": 32, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:57:13] INFO (LocalV3.local) Created trial zsl0B
+[2023-11-12 00:57:19] INFO (LocalV3.local) Trial parameter: zsl0B {"parameter_id": 32, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:58:57] INFO (NNIManager) Trial job zsl0B status changed from RUNNING to SUCCEEDED
+[2023-11-12 00:58:57] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 33, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 00:58:57] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 33,
+  hyperParameters: {
+    value: '{"parameter_id": 33, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 00:58:57] INFO (LocalV3.local) Created trial UrR86
+[2023-11-12 00:59:05] INFO (LocalV3.local) Trial parameter: UrR86 {"parameter_id": 33, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:00:37] INFO (NNIManager) Trial job UrR86 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:00:37] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 34, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:00:38] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 34,
+  hyperParameters: {
+    value: '{"parameter_id": 34, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:00:38] INFO (LocalV3.local) Created trial VepcG
+[2023-11-12 01:00:44] INFO (LocalV3.local) Trial parameter: VepcG {"parameter_id": 34, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:02:21] INFO (NNIManager) Trial job VepcG status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:02:21] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 35, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:02:21] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 35,
+  hyperParameters: {
+    value: '{"parameter_id": 35, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:02:21] INFO (LocalV3.local) Created trial OB4f8
+[2023-11-12 01:02:27] INFO (LocalV3.local) Trial parameter: OB4f8 {"parameter_id": 35, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:03:54] INFO (NNIManager) Trial job OB4f8 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:03:54] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 36, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:03:54] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 36,
+  hyperParameters: {
+    value: '{"parameter_id": 36, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:03:54] INFO (LocalV3.local) Created trial RJxpD
+[2023-11-12 01:04:00] INFO (LocalV3.local) Trial parameter: RJxpD {"parameter_id": 36, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:05:27] INFO (NNIManager) Trial job RJxpD status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:05:27] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 37, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:05:28] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 37,
+  hyperParameters: {
+    value: '{"parameter_id": 37, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:05:28] INFO (LocalV3.local) Created trial Qn5f0
+[2023-11-12 01:05:34] INFO (LocalV3.local) Trial parameter: Qn5f0 {"parameter_id": 37, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:07:11] INFO (NNIManager) Trial job Qn5f0 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:07:11] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 38, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:07:12] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 38,
+  hyperParameters: {
+    value: '{"parameter_id": 38, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:07:12] INFO (LocalV3.local) Created trial F4jpa
+[2023-11-12 01:07:18] INFO (LocalV3.local) Trial parameter: F4jpa {"parameter_id": 38, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:08:47] INFO (NNIManager) Trial job F4jpa status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:08:47] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 39, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:08:48] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 39,
+  hyperParameters: {
+    value: '{"parameter_id": 39, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:08:48] INFO (LocalV3.local) Created trial pPecS
+[2023-11-12 01:08:55] INFO (LocalV3.local) Trial parameter: pPecS {"parameter_id": 39, "parameter_source": "algorithm", "parameters": {"num_block": 8, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:10:24] INFO (NNIManager) Trial job pPecS status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:10:24] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 40, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:10:24] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 40,
+  hyperParameters: {
+    value: '{"parameter_id": 40, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:10:24] INFO (LocalV3.local) Created trial pZxCA
+[2023-11-12 01:10:31] INFO (LocalV3.local) Trial parameter: pZxCA {"parameter_id": 40, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:11:59] INFO (NNIManager) Trial job pZxCA status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:11:59] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 41, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:12:00] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 41,
+  hyperParameters: {
+    value: '{"parameter_id": 41, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:12:00] INFO (LocalV3.local) Created trial cIIsu
+[2023-11-12 01:12:07] INFO (LocalV3.local) Trial parameter: cIIsu {"parameter_id": 41, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:13:35] INFO (NNIManager) Trial job cIIsu status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:13:35] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 42, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:13:35] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 42,
+  hyperParameters: {
+    value: '{"parameter_id": 42, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:13:35] INFO (LocalV3.local) Created trial U5rWM
+[2023-11-12 01:13:43] INFO (LocalV3.local) Trial parameter: U5rWM {"parameter_id": 42, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:15:16] INFO (NNIManager) Trial job U5rWM status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:15:16] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 43, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:15:16] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 43,
+  hyperParameters: {
+    value: '{"parameter_id": 43, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:15:16] INFO (LocalV3.local) Created trial zt1Zw
+[2023-11-12 01:15:22] INFO (LocalV3.local) Trial parameter: zt1Zw {"parameter_id": 43, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:17:04] INFO (NNIManager) Trial job zt1Zw status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:17:04] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 44, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:17:05] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 44,
+  hyperParameters: {
+    value: '{"parameter_id": 44, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:17:05] INFO (LocalV3.local) Created trial ygXJ0
+[2023-11-12 01:17:11] INFO (LocalV3.local) Trial parameter: ygXJ0 {"parameter_id": 44, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:18:50] INFO (NNIManager) Trial job ygXJ0 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:18:50] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 45, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:18:50] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 45,
+  hyperParameters: {
+    value: '{"parameter_id": 45, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:18:50] INFO (LocalV3.local) Created trial RGCvs
+[2023-11-12 01:18:57] INFO (LocalV3.local) Trial parameter: RGCvs {"parameter_id": 45, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:20:35] INFO (NNIManager) Trial job RGCvs status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:20:35] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 46, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:20:36] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 46,
+  hyperParameters: {
+    value: '{"parameter_id": 46, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:20:36] INFO (LocalV3.local) Created trial zryJn
+[2023-11-12 01:20:43] INFO (LocalV3.local) Trial parameter: zryJn {"parameter_id": 46, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:22:20] INFO (NNIManager) Trial job zryJn status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:22:20] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 47, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:22:20] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 47,
+  hyperParameters: {
+    value: '{"parameter_id": 47, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:22:20] INFO (LocalV3.local) Created trial sGACO
+[2023-11-12 01:22:27] INFO (LocalV3.local) Trial parameter: sGACO {"parameter_id": 47, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:24:10] INFO (NNIManager) Trial job sGACO status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:24:10] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 48, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:24:10] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 48,
+  hyperParameters: {
+    value: '{"parameter_id": 48, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:24:10] INFO (LocalV3.local) Created trial RWjg7
+[2023-11-12 01:24:17] INFO (LocalV3.local) Trial parameter: RWjg7 {"parameter_id": 48, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:25:57] INFO (NNIManager) Trial job RWjg7 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:25:57] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 49, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:25:57] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 49,
+  hyperParameters: {
+    value: '{"parameter_id": 49, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:25:57] INFO (LocalV3.local) Created trial y7tn7
+[2023-11-12 01:26:05] INFO (LocalV3.local) Trial parameter: y7tn7 {"parameter_id": 49, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:27:44] INFO (NNIManager) Trial job y7tn7 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:27:44] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 50, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:27:44] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 50,
+  hyperParameters: {
+    value: '{"parameter_id": 50, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:27:44] INFO (LocalV3.local) Created trial k05bY
+[2023-11-12 01:27:51] INFO (LocalV3.local) Trial parameter: k05bY {"parameter_id": 50, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:29:34] INFO (NNIManager) Trial job k05bY status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:29:34] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 51, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:29:35] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 51,
+  hyperParameters: {
+    value: '{"parameter_id": 51, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:29:35] INFO (LocalV3.local) Created trial LFJIB
+[2023-11-12 01:29:41] INFO (LocalV3.local) Trial parameter: LFJIB {"parameter_id": 51, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 3, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:31:17] INFO (NNIManager) Trial job LFJIB status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:31:17] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 52, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:31:17] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 52,
+  hyperParameters: {
+    value: '{"parameter_id": 52, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:31:17] INFO (LocalV3.local) Created trial GVkMi
+[2023-11-12 01:31:25] INFO (LocalV3.local) Trial parameter: GVkMi {"parameter_id": 52, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:33:00] INFO (NNIManager) Trial job GVkMi status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:33:00] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 53, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:33:01] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 53,
+  hyperParameters: {
+    value: '{"parameter_id": 53, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:33:01] INFO (LocalV3.local) Created trial vK0SW
+[2023-11-12 01:33:07] INFO (LocalV3.local) Trial parameter: vK0SW {"parameter_id": 53, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:34:35] INFO (NNIManager) Trial job vK0SW status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:34:35] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 54, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:34:35] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 54,
+  hyperParameters: {
+    value: '{"parameter_id": 54, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:34:35] INFO (LocalV3.local) Created trial YpPwr
+[2023-11-12 01:34:42] INFO (LocalV3.local) Trial parameter: YpPwr {"parameter_id": 54, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:36:13] INFO (NNIManager) Trial job YpPwr status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:36:13] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 55, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:36:13] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 55,
+  hyperParameters: {
+    value: '{"parameter_id": 55, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:36:13] INFO (LocalV3.local) Created trial bH2Ay
+[2023-11-12 01:36:21] INFO (LocalV3.local) Trial parameter: bH2Ay {"parameter_id": 55, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:38:11] INFO (NNIManager) Trial job bH2Ay status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:38:11] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 56, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:38:12] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 56,
+  hyperParameters: {
+    value: '{"parameter_id": 56, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:38:12] INFO (LocalV3.local) Created trial MHTQv
+[2023-11-12 01:38:19] INFO (LocalV3.local) Trial parameter: MHTQv {"parameter_id": 56, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:40:02] INFO (NNIManager) Trial job MHTQv status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:40:02] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 57, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:40:03] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 57,
+  hyperParameters: {
+    value: '{"parameter_id": 57, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:40:03] INFO (LocalV3.local) Created trial g11Pg
+[2023-11-12 01:40:09] INFO (LocalV3.local) Trial parameter: g11Pg {"parameter_id": 57, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 3, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:41:49] INFO (NNIManager) Trial job g11Pg status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:41:49] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 58, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:41:49] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 58,
+  hyperParameters: {
+    value: '{"parameter_id": 58, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:41:49] INFO (LocalV3.local) Created trial iZGmn
+[2023-11-12 01:41:57] INFO (LocalV3.local) Trial parameter: iZGmn {"parameter_id": 58, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:43:30] INFO (NNIManager) Trial job iZGmn status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:43:30] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 59, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:43:30] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 59,
+  hyperParameters: {
+    value: '{"parameter_id": 59, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:43:30] INFO (LocalV3.local) Created trial eEIq8
+[2023-11-12 01:43:38] INFO (LocalV3.local) Trial parameter: eEIq8 {"parameter_id": 59, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:45:12] INFO (NNIManager) Trial job eEIq8 status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:45:12] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 60, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:45:12] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 60,
+  hyperParameters: {
+    value: '{"parameter_id": 60, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:45:12] INFO (LocalV3.local) Created trial ydWTe
+[2023-11-12 01:45:19] INFO (LocalV3.local) Trial parameter: ydWTe {"parameter_id": 60, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 64, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:46:49] INFO (NNIManager) Trial job ydWTe status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:46:49] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 61, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:46:50] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 61,
+  hyperParameters: {
+    value: '{"parameter_id": 61, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:46:50] INFO (LocalV3.local) Created trial tdN1V
+[2023-11-12 01:46:58] INFO (LocalV3.local) Trial parameter: tdN1V {"parameter_id": 61, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:48:43] INFO (NNIManager) Trial job tdN1V status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:48:43] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 62, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:48:44] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 62,
+  hyperParameters: {
+    value: '{"parameter_id": 62, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:48:44] INFO (LocalV3.local) Created trial BT52S
+[2023-11-12 01:48:52] INFO (LocalV3.local) Trial parameter: BT52S {"parameter_id": 62, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 64, "generator_activation": "relu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:50:35] INFO (NNIManager) Trial job BT52S status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:50:35] INFO (NNIManager) NNIManager received command from dispatcher: TR, {"parameter_id": 63, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:50:36] INFO (NNIManager) submitTrialJob: form: {
+  sequenceId: 63,
+  hyperParameters: {
+    value: '{"parameter_id": 63, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}',
+    index: 0
+  },
+  placementConstraint: { type: 'None', gpus: [] }
+}
+[2023-11-12 01:50:36] INFO (LocalV3.local) Created trial K91xT
+[2023-11-12 01:50:43] INFO (LocalV3.local) Trial parameter: K91xT {"parameter_id": 63, "parameter_source": "algorithm", "parameters": {"num_block": 16, "num_discriminator_blocks": 4, "conv_kernel_size": 5, "generator_depth": 128, "discriminator_depth": 128, "generator_activation": "prelu", "discriminator_activation": "leakyrelu"}, "parameter_index": 0}
+[2023-11-12 01:52:24] INFO (NNIManager) Trial job K91xT status changed from RUNNING to SUCCEEDED
+[2023-11-12 01:52:24] INFO (NNIManager) NNIManager received command from dispatcher: NO, {"parameter_id": 64, "parameter_source": "algorithm", "parameters": "", "parameter_index": 0}
+[2023-11-12 01:52:24] INFO (NNIManager) Change NNIManager status from: RUNNING to: TUNER_NO_MORE_TRIAL

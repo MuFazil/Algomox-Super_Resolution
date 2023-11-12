@@ -1,0 +1,14 @@
+experimentName: SRGAN_nas
+trialConcurrency: 1
+trialCommand: python3.exe SRGAN_NAS/main.py
+searchSpaceFile: SRGAN_NAS\search_space.json
+trainingService:
+  platform: local
+  # useActiveGpu: True
+  # gpuIndices: 0
+
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: maximize
+  # gpuIndices: [0]

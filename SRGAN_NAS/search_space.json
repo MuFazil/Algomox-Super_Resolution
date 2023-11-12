@@ -1,0 +1,11 @@
+{
+   
+      "num_block": {"_type": "choice", "_value": [8, 16]},
+      "num_discriminator_blocks": {"_type": "choice", "_value": [3, 4]},
+      "conv_kernel_size": {"_type": "choice", "_value": [3, 5]},
+      "generator_depth": {"_type": "choice", "_value": [64, 128]},
+      "discriminator_depth": {"_type": "choice", "_value": [64, 128]},
+      "generator_activation": {"_type": "choice", "_value": ["prelu", "relu"]},
+      "discriminator_activation": {"_type": "choice", "_value": ["leakyrelu"]}
+  }
+  

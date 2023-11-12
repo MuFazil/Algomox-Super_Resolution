@@ -1,0 +1,2116 @@
+{
+  "experimentParameters": {
+    "params": {
+      "experimentName": "SRGAN_nas",
+      "experimentType": "hpo",
+      "searchSpaceFile": "D:\\algomox\\SRGAN_CustomDataset\\search_space.json",
+      "searchSpace": {
+        "num_block": {
+          "_type": "choice",
+          "_value": [8, 16]
+        },
+        "num_discriminator_blocks": {
+          "_type": "choice",
+          "_value": [3, 4]
+        },
+        "conv_kernel_size": {
+          "_type": "choice",
+          "_value": [3, 5]
+        },
+        "generator_depth": {
+          "_type": "choice",
+          "_value": [64, 128]
+        },
+        "discriminator_depth": {
+          "_type": "choice",
+          "_value": [64, 128]
+        },
+        "generator_activation": {
+          "_type": "choice",
+          "_value": ["prelu", "relu"]
+        },
+        "discriminator_activation": {
+          "_type": "choice",
+          "_value": ["leakyrelu"]
+        }
+      },
+      "trialCommand": "C:/Users/Lenovo/AppData/Local/Programs/Python/Python310/python.exe D:/algomox/SRGAN_CustomDataset/main.py",
+      "trialCodeDirectory": "D:\\algomox\\SRGAN_CustomDataset",
+      "trialConcurrency": 1,
+      "useAnnotation": false,
+      "debug": false,
+      "logLevel": "info",
+      "experimentWorkingDirectory": "C:\\Users\\Lenovo\\nni-experiments",
+      "tuner": {
+        "name": "TPE",
+        "classArgs": {
+          "optimize_mode": "maximize"
+        }
+      },
+      "trainingService": {
+        "platform": "local",
+        "trialCommand": "C:/Users/Lenovo/AppData/Local/Programs/Python/Python310/python.exe D:/algomox/SRGAN_CustomDataset/main.py",
+        "trialCodeDirectory": "D:\\algomox\\SRGAN_CustomDataset",
+        "debug": false,
+        "maxTrialNumberPerGpu": 1,
+        "reuseMode": false
+      }
+    },
+    "id": "nlua6ivr",
+    "execDuration": 6939,
+    "logDir": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr",
+    "startTime": 1699727748220,
+    "nextSequenceId": 64,
+    "revision": 759
+  },
+  "trialMessage": [
+    {
+      "trialJobId": "YTvAC",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":0,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699727752326,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\YTvAC",
+      "sequenceId": 0,
+      "envId": "local-env",
+      "endTime": 1699727851244,
+      "finalMetricData": [
+        {
+          "timestamp": 1699727844948,
+          "trialJobId": "YTvAC",
+          "parameterId": "0",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.70314836528578\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699727844948,
+          "trialJobId": "YTvAC",
+          "parameterId": "0",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.70314836528578\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "dYNi9",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":1,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699727851980,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\dYNi9",
+      "sequenceId": 1,
+      "envId": "local-env",
+      "endTime": 1699727953661,
+      "finalMetricData": [
+        {
+          "timestamp": 1699727948300,
+          "trialJobId": "dYNi9",
+          "parameterId": "1",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.885335319478074\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699727948300,
+          "trialJobId": "dYNi9",
+          "parameterId": "1",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.885335319478074\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "LC4eF",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":2,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699727954690,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\LC4eF",
+      "sequenceId": 2,
+      "envId": "local-env",
+      "endTime": 1699728054714,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728047733,
+          "trialJobId": "LC4eF",
+          "parameterId": "2",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.087558306210262\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728047733,
+          "trialJobId": "LC4eF",
+          "parameterId": "2",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.087558306210262\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "J6cxf",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":3,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728055748,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\J6cxf",
+      "sequenceId": 3,
+      "envId": "local-env",
+      "endTime": 1699728152047,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728144263,
+          "trialJobId": "J6cxf",
+          "parameterId": "3",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.18479263638633\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728144263,
+          "trialJobId": "J6cxf",
+          "parameterId": "3",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.18479263638633\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "FLwUS",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":4,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728152604,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\FLwUS",
+      "sequenceId": 4,
+      "envId": "local-env",
+      "endTime": 1699728253028,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728248674,
+          "trialJobId": "FLwUS",
+          "parameterId": "4",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.300093352252553\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728248674,
+          "trialJobId": "FLwUS",
+          "parameterId": "4",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.300093352252553\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "xJZie",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":5,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728253746,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\xJZie",
+      "sequenceId": 5,
+      "envId": "local-env",
+      "endTime": 1699728344682,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728339851,
+          "trialJobId": "xJZie",
+          "parameterId": "5",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.083052633946604\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728339851,
+          "trialJobId": "xJZie",
+          "parameterId": "5",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.083052633946604\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "IuM5t",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":6,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728345619,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\IuM5t",
+      "sequenceId": 6,
+      "envId": "local-env",
+      "endTime": 1699728445605,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728438099,
+          "trialJobId": "IuM5t",
+          "parameterId": "6",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.4968614799983\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728438099,
+          "trialJobId": "IuM5t",
+          "parameterId": "6",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.4968614799983\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "e1WAz",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":7,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728446594,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\e1WAz",
+      "sequenceId": 7,
+      "envId": "local-env",
+      "endTime": 1699728555307,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728547328,
+          "trialJobId": "e1WAz",
+          "parameterId": "7",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.843486415572475\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728547328,
+          "trialJobId": "e1WAz",
+          "parameterId": "7",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.843486415572475\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "tN0hZ",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":8,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728556283,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\tN0hZ",
+      "sequenceId": 8,
+      "envId": "local-env",
+      "endTime": 1699728649910,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728642547,
+          "trialJobId": "tN0hZ",
+          "parameterId": "8",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.829880111767164\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728642547,
+          "trialJobId": "tN0hZ",
+          "parameterId": "8",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.829880111767164\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "Lx8Sl",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":9,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728650719,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\Lx8Sl",
+      "sequenceId": 9,
+      "envId": "local-env",
+      "endTime": 1699728749862,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728742331,
+          "trialJobId": "Lx8Sl",
+          "parameterId": "9",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.608970907340183\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728742331,
+          "trialJobId": "Lx8Sl",
+          "parameterId": "9",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.608970907340183\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "O6ahO",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":10,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728750505,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\O6ahO",
+      "sequenceId": 10,
+      "envId": "local-env",
+      "endTime": 1699728842891,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728839152,
+          "trialJobId": "O6ahO",
+          "parameterId": "10",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.214497248079592\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728839152,
+          "trialJobId": "O6ahO",
+          "parameterId": "10",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.214497248079592\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "y6tOB",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":11,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728843700,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\y6tOB",
+      "sequenceId": 11,
+      "envId": "local-env",
+      "endTime": 1699728930676,
+      "finalMetricData": [
+        {
+          "timestamp": 1699728925264,
+          "trialJobId": "y6tOB",
+          "parameterId": "11",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.079059899980134\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699728925264,
+          "trialJobId": "y6tOB",
+          "parameterId": "11",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.079059899980134\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "DMsiT",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":12,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699728931214,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\DMsiT",
+      "sequenceId": 12,
+      "envId": "local-env",
+      "endTime": 1699729037140,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729030890,
+          "trialJobId": "DMsiT",
+          "parameterId": "12",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.940852686745085\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729030890,
+          "trialJobId": "DMsiT",
+          "parameterId": "12",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.940852686745085\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "mOKu4",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":13,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729037864,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\mOKu4",
+      "sequenceId": 13,
+      "envId": "local-env",
+      "endTime": 1699729132362,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729126626,
+          "trialJobId": "mOKu4",
+          "parameterId": "13",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.373253894935125\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729126626,
+          "trialJobId": "mOKu4",
+          "parameterId": "13",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.373253894935125\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "qRr7s",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":14,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729133533,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\qRr7s",
+      "sequenceId": 14,
+      "envId": "local-env",
+      "endTime": 1699729222603,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729216482,
+          "trialJobId": "qRr7s",
+          "parameterId": "14",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.32510264712349\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729216482,
+          "trialJobId": "qRr7s",
+          "parameterId": "14",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.32510264712349\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "FHDLc",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":15,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729223159,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\FHDLc",
+      "sequenceId": 15,
+      "envId": "local-env",
+      "endTime": 1699729317321,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729307709,
+          "trialJobId": "FHDLc",
+          "parameterId": "15",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.293800976645436\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729307709,
+          "trialJobId": "FHDLc",
+          "parameterId": "15",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.293800976645436\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "KRchD",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":16,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729318015,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\KRchD",
+      "sequenceId": 16,
+      "envId": "local-env",
+      "endTime": 1699729418477,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729413013,
+          "trialJobId": "KRchD",
+          "parameterId": "16",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.054747625516345\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729413013,
+          "trialJobId": "KRchD",
+          "parameterId": "16",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.054747625516345\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "JOagI",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":17,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729419488,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\JOagI",
+      "sequenceId": 17,
+      "envId": "local-env",
+      "endTime": 1699729511012,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729505777,
+          "trialJobId": "JOagI",
+          "parameterId": "17",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.767712076271852\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729505777,
+          "trialJobId": "JOagI",
+          "parameterId": "17",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.767712076271852\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "LCGhP",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":18,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729511935,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\LCGhP",
+      "sequenceId": 18,
+      "envId": "local-env",
+      "endTime": 1699729598441,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729591934,
+          "trialJobId": "LCGhP",
+          "parameterId": "18",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.34918136321388\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729591934,
+          "trialJobId": "LCGhP",
+          "parameterId": "18",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.34918136321388\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "z9pQU",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":19,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729599375,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\z9pQU",
+      "sequenceId": 19,
+      "envId": "local-env",
+      "endTime": 1699729692246,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729687036,
+          "trialJobId": "z9pQU",
+          "parameterId": "19",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.478391115086062\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729687036,
+          "trialJobId": "z9pQU",
+          "parameterId": "19",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.478391115086062\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "Z5W2W",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":20,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729693228,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\Z5W2W",
+      "sequenceId": 20,
+      "envId": "local-env",
+      "endTime": 1699729784952,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729781124,
+          "trialJobId": "Z5W2W",
+          "parameterId": "20",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.930566353822563\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729781124,
+          "trialJobId": "Z5W2W",
+          "parameterId": "20",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.930566353822563\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "q9gCU",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":21,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729785871,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\q9gCU",
+      "sequenceId": 21,
+      "envId": "local-env",
+      "endTime": 1699729877383,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729872870,
+          "trialJobId": "q9gCU",
+          "parameterId": "21",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.036447778226588\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729872870,
+          "trialJobId": "q9gCU",
+          "parameterId": "21",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.036447778226588\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "jkCcu",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":22,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729878266,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\jkCcu",
+      "sequenceId": 22,
+      "envId": "local-env",
+      "endTime": 1699729960520,
+      "finalMetricData": [
+        {
+          "timestamp": 1699729956479,
+          "trialJobId": "jkCcu",
+          "parameterId": "22",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.034880039845383\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699729956479,
+          "trialJobId": "jkCcu",
+          "parameterId": "22",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.034880039845383\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "ZVG7N",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":23,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699729961475,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\ZVG7N",
+      "sequenceId": 23,
+      "envId": "local-env",
+      "endTime": 1699730044398,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730038997,
+          "trialJobId": "ZVG7N",
+          "parameterId": "23",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.917595043525857\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730038997,
+          "trialJobId": "ZVG7N",
+          "parameterId": "23",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.917595043525857\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "iPY7M",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":24,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730045141,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\iPY7M",
+      "sequenceId": 24,
+      "envId": "local-env",
+      "endTime": 1699730146695,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730141755,
+          "trialJobId": "iPY7M",
+          "parameterId": "24",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.6630545971517\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730141755,
+          "trialJobId": "iPY7M",
+          "parameterId": "24",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.6630545971517\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "rR45I",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":25,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730147593,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\rR45I",
+      "sequenceId": 25,
+      "envId": "local-env",
+      "endTime": 1699730248941,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730241995,
+          "trialJobId": "rR45I",
+          "parameterId": "25",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.364026507780565\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730241995,
+          "trialJobId": "rR45I",
+          "parameterId": "25",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.364026507780565\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "ySFg1",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":26,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730249675,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\ySFg1",
+      "sequenceId": 26,
+      "envId": "local-env",
+      "endTime": 1699730351865,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730345271,
+          "trialJobId": "ySFg1",
+          "parameterId": "26",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.04647819221537\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730345271,
+          "trialJobId": "ySFg1",
+          "parameterId": "26",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.04647819221537\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "DhbyG",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":27,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730352676,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\DhbyG",
+      "sequenceId": 27,
+      "envId": "local-env",
+      "endTime": 1699730446293,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730439822,
+          "trialJobId": "DhbyG",
+          "parameterId": "27",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.83607100629267\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730439822,
+          "trialJobId": "DhbyG",
+          "parameterId": "27",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.83607100629267\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "N6O6L",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":28,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730446938,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\N6O6L",
+      "sequenceId": 28,
+      "envId": "local-env",
+      "endTime": 1699730542034,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730535334,
+          "trialJobId": "N6O6L",
+          "parameterId": "28",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.917201574628454\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730535334,
+          "trialJobId": "N6O6L",
+          "parameterId": "28",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.917201574628454\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "rukaY",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":29,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730542573,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\rukaY",
+      "sequenceId": 29,
+      "envId": "local-env",
+      "endTime": 1699730645080,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730640701,
+          "trialJobId": "rukaY",
+          "parameterId": "29",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.599065671333793\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730640701,
+          "trialJobId": "rukaY",
+          "parameterId": "29",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.599065671333793\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "r33Pc",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":30,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730645635,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\r33Pc",
+      "sequenceId": 30,
+      "envId": "local-env",
+      "endTime": 1699730739959,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730735062,
+          "trialJobId": "r33Pc",
+          "parameterId": "30",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.60045946984188\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730735062,
+          "trialJobId": "r33Pc",
+          "parameterId": "30",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.60045946984188\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "Bbo0w",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":31,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730740552,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\Bbo0w",
+      "sequenceId": 31,
+      "envId": "local-env",
+      "endTime": 1699730832235,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730827248,
+          "trialJobId": "Bbo0w",
+          "parameterId": "31",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.011035781312568\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730827248,
+          "trialJobId": "Bbo0w",
+          "parameterId": "31",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.011035781312568\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "zsl0B",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":32,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730833144,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\zsl0B",
+      "sequenceId": 32,
+      "envId": "local-env",
+      "endTime": 1699730937262,
+      "finalMetricData": [
+        {
+          "timestamp": 1699730931273,
+          "trialJobId": "zsl0B",
+          "parameterId": "32",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.739048357979488\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699730931273,
+          "trialJobId": "zsl0B",
+          "parameterId": "32",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.739048357979488\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "UrR86",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":33,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699730937924,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\UrR86",
+      "sequenceId": 33,
+      "envId": "local-env",
+      "endTime": 1699731037555,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731030946,
+          "trialJobId": "UrR86",
+          "parameterId": "33",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.11067306101579\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731030946,
+          "trialJobId": "UrR86",
+          "parameterId": "33",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.11067306101579\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "VepcG",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":34,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731038349,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\VepcG",
+      "sequenceId": 34,
+      "envId": "local-env",
+      "endTime": 1699731140772,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731135626,
+          "trialJobId": "VepcG",
+          "parameterId": "34",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.53104073400771\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731135626,
+          "trialJobId": "VepcG",
+          "parameterId": "34",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.53104073400771\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "OB4f8",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":35,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731141639,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\OB4f8",
+      "sequenceId": 35,
+      "envId": "local-env",
+      "endTime": 1699731234013,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731229865,
+          "trialJobId": "OB4f8",
+          "parameterId": "35",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.395296802803124\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731229865,
+          "trialJobId": "OB4f8",
+          "parameterId": "35",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.395296802803124\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "RJxpD",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":36,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731234736,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\RJxpD",
+      "sequenceId": 36,
+      "envId": "local-env",
+      "endTime": 1699731327496,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731320618,
+          "trialJobId": "RJxpD",
+          "parameterId": "36",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.29945105344015\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731320618,
+          "trialJobId": "RJxpD",
+          "parameterId": "36",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.29945105344015\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "Qn5f0",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":37,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731328049,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\Qn5f0",
+      "sequenceId": 37,
+      "envId": "local-env",
+      "endTime": 1699731431769,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731426212,
+          "trialJobId": "Qn5f0",
+          "parameterId": "37",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.601719452155272\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731426212,
+          "trialJobId": "Qn5f0",
+          "parameterId": "37",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.601719452155272\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "F4jpa",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":38,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731432401,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\F4jpa",
+      "sequenceId": 38,
+      "envId": "local-env",
+      "endTime": 1699731527789,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731522010,
+          "trialJobId": "F4jpa",
+          "parameterId": "38",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.132349145698523\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731522010,
+          "trialJobId": "F4jpa",
+          "parameterId": "38",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.132349145698523\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "pPecS",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":39,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":8,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731528368,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\pPecS",
+      "sequenceId": 39,
+      "envId": "local-env",
+      "endTime": 1699731624280,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731617682,
+          "trialJobId": "pPecS",
+          "parameterId": "39",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.977015653924674\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731617682,
+          "trialJobId": "pPecS",
+          "parameterId": "39",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.977015653924674\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "pZxCA",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":40,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731624959,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\pZxCA",
+      "sequenceId": 40,
+      "envId": "local-env",
+      "endTime": 1699731719732,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731715155,
+          "trialJobId": "pZxCA",
+          "parameterId": "40",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.266697205686643\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731715155,
+          "trialJobId": "pZxCA",
+          "parameterId": "40",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.266697205686643\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "cIIsu",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":41,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731720249,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\cIIsu",
+      "sequenceId": 41,
+      "envId": "local-env",
+      "endTime": 1699731815110,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731809715,
+          "trialJobId": "cIIsu",
+          "parameterId": "41",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.841259998077238\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731809715,
+          "trialJobId": "cIIsu",
+          "parameterId": "41",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.841259998077238\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "U5rWM",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":42,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731815848,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\U5rWM",
+      "sequenceId": 42,
+      "envId": "local-env",
+      "endTime": 1699731916067,
+      "finalMetricData": [
+        {
+          "timestamp": 1699731909616,
+          "trialJobId": "U5rWM",
+          "parameterId": "42",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.2025002172435\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699731909616,
+          "trialJobId": "U5rWM",
+          "parameterId": "42",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.2025002172435\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "zt1Zw",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":43,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699731916661,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\zt1Zw",
+      "sequenceId": 43,
+      "envId": "local-env",
+      "endTime": 1699732024299,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732019516,
+          "trialJobId": "zt1Zw",
+          "parameterId": "43",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.458894065351068\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732019516,
+          "trialJobId": "zt1Zw",
+          "parameterId": "43",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.458894065351068\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "ygXJ0",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":44,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732025115,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\ygXJ0",
+      "sequenceId": 44,
+      "envId": "local-env",
+      "endTime": 1699732130002,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732124164,
+          "trialJobId": "ygXJ0",
+          "parameterId": "44",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.515242846889368\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732124164,
+          "trialJobId": "ygXJ0",
+          "parameterId": "44",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.515242846889368\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "RGCvs",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":45,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732130579,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\RGCvs",
+      "sequenceId": 45,
+      "envId": "local-env",
+      "endTime": 1699732235219,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732229996,
+          "trialJobId": "RGCvs",
+          "parameterId": "45",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.94160983956637\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732229996,
+          "trialJobId": "RGCvs",
+          "parameterId": "45",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.94160983956637\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "zryJn",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":46,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732236157,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\zryJn",
+      "sequenceId": 46,
+      "envId": "local-env",
+      "endTime": 1699732339911,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732333991,
+          "trialJobId": "zryJn",
+          "parameterId": "46",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.807168095326414\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732333991,
+          "trialJobId": "zryJn",
+          "parameterId": "46",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.807168095326414\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "sGACO",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":47,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732340631,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\sGACO",
+      "sequenceId": 47,
+      "envId": "local-env",
+      "endTime": 1699732449740,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732444991,
+          "trialJobId": "sGACO",
+          "parameterId": "47",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.213670534078858\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732444991,
+          "trialJobId": "sGACO",
+          "parameterId": "47",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.213670534078858\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "RWjg7",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":48,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732450639,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\RWjg7",
+      "sequenceId": 48,
+      "envId": "local-env",
+      "endTime": 1699732556715,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732550271,
+          "trialJobId": "RWjg7",
+          "parameterId": "48",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.060004352168917\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732550271,
+          "trialJobId": "RWjg7",
+          "parameterId": "48",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.060004352168917\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "y7tn7",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":49,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732557682,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\y7tn7",
+      "sequenceId": 49,
+      "envId": "local-env",
+      "endTime": 1699732663789,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732657644,
+          "trialJobId": "y7tn7",
+          "parameterId": "49",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.53382917205519\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732657644,
+          "trialJobId": "y7tn7",
+          "parameterId": "49",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.53382917205519\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "k05bY",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":50,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732664595,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\k05bY",
+      "sequenceId": 50,
+      "envId": "local-env",
+      "endTime": 1699732774359,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732768838,
+          "trialJobId": "k05bY",
+          "parameterId": "50",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.56149245653105\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732768838,
+          "trialJobId": "k05bY",
+          "parameterId": "50",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.56149245653105\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "LFJIB",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":51,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":3,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732775199,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\LFJIB",
+      "sequenceId": 51,
+      "envId": "local-env",
+      "endTime": 1699732876941,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732870139,
+          "trialJobId": "LFJIB",
+          "parameterId": "51",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.983819081666265\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732870139,
+          "trialJobId": "LFJIB",
+          "parameterId": "51",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.983819081666265\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "GVkMi",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":52,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732877894,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\GVkMi",
+      "sequenceId": 52,
+      "envId": "local-env",
+      "endTime": 1699732980558,
+      "finalMetricData": [
+        {
+          "timestamp": 1699732974968,
+          "trialJobId": "GVkMi",
+          "parameterId": "52",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.92305054186021\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699732974968,
+          "trialJobId": "GVkMi",
+          "parameterId": "52",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.92305054186021\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "vK0SW",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":53,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699732981344,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\vK0SW",
+      "sequenceId": 53,
+      "envId": "local-env",
+      "endTime": 1699733074927,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733070792,
+          "trialJobId": "vK0SW",
+          "parameterId": "53",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.28827593747476\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733070792,
+          "trialJobId": "vK0SW",
+          "parameterId": "53",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.28827593747476\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "YpPwr",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":54,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733075690,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\YpPwr",
+      "sequenceId": 54,
+      "envId": "local-env",
+      "endTime": 1699733173119,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733164880,
+          "trialJobId": "YpPwr",
+          "parameterId": "54",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.956650585892937\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733164880,
+          "trialJobId": "YpPwr",
+          "parameterId": "54",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.956650585892937\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "bH2Ay",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":55,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733173673,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\bH2Ay",
+      "sequenceId": 55,
+      "envId": "local-env",
+      "endTime": 1699733291574,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733284728,
+          "trialJobId": "bH2Ay",
+          "parameterId": "55",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.910528780601055\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733284728,
+          "trialJobId": "bH2Ay",
+          "parameterId": "55",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.910528780601055\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "MHTQv",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":56,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733292479,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\MHTQv",
+      "sequenceId": 56,
+      "envId": "local-env",
+      "endTime": 1699733402580,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733396848,
+          "trialJobId": "MHTQv",
+          "parameterId": "56",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.40984321657082\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733396848,
+          "trialJobId": "MHTQv",
+          "parameterId": "56",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.40984321657082\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "g11Pg",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":57,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":3,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733403268,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\g11Pg",
+      "sequenceId": 57,
+      "envId": "local-env",
+      "endTime": 1699733508888,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733500689,
+          "trialJobId": "g11Pg",
+          "parameterId": "57",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.96959010548051\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733500689,
+          "trialJobId": "g11Pg",
+          "parameterId": "57",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.96959010548051\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "iZGmn",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":58,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733509836,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\iZGmn",
+      "sequenceId": 58,
+      "envId": "local-env",
+      "endTime": 1699733609755,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733603483,
+          "trialJobId": "iZGmn",
+          "parameterId": "58",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.834362904228996\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733603483,
+          "trialJobId": "iZGmn",
+          "parameterId": "58",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.834362904228996\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "eEIq8",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":59,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733610551,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\eEIq8",
+      "sequenceId": 59,
+      "envId": "local-env",
+      "endTime": 1699733712374,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733708084,
+          "trialJobId": "eEIq8",
+          "parameterId": "59",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.29212730912607\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733708084,
+          "trialJobId": "eEIq8",
+          "parameterId": "59",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.29212730912607\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "ydWTe",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":60,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":64,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733712979,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\ydWTe",
+      "sequenceId": 60,
+      "envId": "local-env",
+      "endTime": 1699733809624,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733802074,
+          "trialJobId": "ydWTe",
+          "parameterId": "60",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.751742544089343\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733802074,
+          "trialJobId": "ydWTe",
+          "parameterId": "60",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.751742544089343\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "tdN1V",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":61,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733810351,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\tdN1V",
+      "sequenceId": 61,
+      "envId": "local-env",
+      "endTime": 1699733923187,
+      "finalMetricData": [
+        {
+          "timestamp": 1699733916735,
+          "trialJobId": "tdN1V",
+          "parameterId": "61",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.57882336245036\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699733916735,
+          "trialJobId": "tdN1V",
+          "parameterId": "61",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.57882336245036\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "BT52S",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":62,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":64,\"generator_activation\":\"relu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699733924189,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\BT52S",
+      "sequenceId": 62,
+      "envId": "local-env",
+      "endTime": 1699734035714,
+      "finalMetricData": [
+        {
+          "timestamp": 1699734029546,
+          "trialJobId": "BT52S",
+          "parameterId": "62",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.994580794247703\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699734029546,
+          "trialJobId": "BT52S",
+          "parameterId": "62",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"18.994580794247703\""
+        }
+      ]
+    },
+    {
+      "trialJobId": "K91xT",
+      "status": "SUCCEEDED",
+      "hyperParameters": [
+        "{\"parameter_id\":63,\"parameter_source\":\"algorithm\",\"parameters\":{\"num_block\":16,\"num_discriminator_blocks\":4,\"conv_kernel_size\":5,\"generator_depth\":128,\"discriminator_depth\":128,\"generator_activation\":\"prelu\",\"discriminator_activation\":\"leakyrelu\"},\"parameter_index\":0}"
+      ],
+      "startTime": 1699734036289,
+      "logPath": "C:\\Users\\Lenovo\\nni-experiments\\nlua6ivr\\environments\\local-env\\trials\\K91xT",
+      "sequenceId": 63,
+      "envId": "local-env",
+      "endTime": 1699734144135,
+      "finalMetricData": [
+        {
+          "timestamp": 1699734136471,
+          "trialJobId": "K91xT",
+          "parameterId": "63",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.47573605667892\""
+        }
+      ],
+      "intermediate": [
+        {
+          "timestamp": 1699734136471,
+          "trialJobId": "K91xT",
+          "parameterId": "63",
+          "type": "FINAL",
+          "sequence": 0,
+          "data": "\"19.47573605667892\""
+        }
+      ]
+    }
+  ]
+}
