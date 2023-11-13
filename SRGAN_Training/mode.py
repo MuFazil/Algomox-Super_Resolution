@@ -167,8 +167,8 @@ def train(args):
 
 # In[ ]:
 
-
-def test(args):
+#Function to validate the model
+def valid(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     dataset = mydata(
         GT_path=args.GT_path, LR_path=args.LR_path, in_memory=False, transform=None
@@ -239,7 +239,7 @@ def test(args):
         f.write("avg psnr : %04f" % np.mean(psnr_list))
 
 
-def test_only(args):
+def test(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     dataset = testOnly_data(LR_path=args.LR_path, in_memory=False, transform=None)

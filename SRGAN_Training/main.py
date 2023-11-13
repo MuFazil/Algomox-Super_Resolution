@@ -34,8 +34,8 @@ args = parser.parse_args()
 if args.mode == "train":
     train(args)
 
+elif args.mode == "valid":
+    valid(args)
+
 elif args.mode == "test":
     test(args)
-
-elif args.mode == "test_only":
-    test_only(args)
