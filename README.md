@@ -1,6 +1,6 @@
 # Algomox-Super_Resolution
 
-## Dataset folder contains the dataset used for both trainin and testing
+## Dataset folder contains the dataset used for both training and testing
 
 ## SRGAN_HPT
 ### is for Hyper Parameter Tuning
