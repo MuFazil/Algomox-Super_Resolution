@@ -10,7 +10,7 @@ command : nnictl create --config path\to\config.yaml
 
 
 ## SRGAN_NAS
-#### is for Neural Architecture Search
+#### Is for Neural Architecture Search
 command : nnictl create --config path\to\config.yaml
 #### Only a sample dataset is used for this task
 #### Parameter range and choices can be adjusted in the search space
