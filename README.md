@@ -20,7 +20,11 @@ command : nnictl create --config path\to\config.yaml
 #### Contains files for training (both pre-training and finetuning),  validation and testing
 Training command : !python main.py --LR_path SRGAN_CustomDataset\custom_dataset\train_LR --GT_path SRGAN_CustomDataset\custom_dataset\train_HR
 
-Testing Command : !python main.py main.py --mode test --LR_path Dataset\valid\LowRes --GT_path Dataset\valid\HighRes --generator_path SRGAN_CustomDataset\model\pre_trained_model_2700.pt
+Validating Command : !python main.py main.py --mode test --LR_path Dataset\valid\LowRes --GT_path Dataset\valid\HighRes --generator_path SRGAN_CustomDataset\model\pre_trained_model_2700.pt
+
+Testing Command !python main.py main.py --mode test_only --LR_path Dataset\valid\LowRes --GT_path Dataset\valid\HighRes --generator_path SRGAN_CustomDataset\model\pre_trained_model_2700.pt
+
+
 #### Check the available command line arguments in main.py
 
 
